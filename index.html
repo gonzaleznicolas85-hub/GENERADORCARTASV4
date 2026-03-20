@@ -557,7 +557,7 @@
       <h2 class="section-title">Acciones</h2>
       <div class="footer-actions">
         <button id="submitBtn" type="button" class="btn-primary" onclick="submitDrinksMenu()">Generar carta</button>
-        <button type="button" class="btn-secondary" onclick="loadDemoData()">Cargar demo ideal</button>
+        <button type="button" class="btn-secondary" onclick="loadDemoData()">Cargar Carta con variables de la liga de ejecucion ideal</button>
         <button type="button" class="btn-light" onclick="renderPreview()">Actualizar preview</button>
         <button type="button" class="btn-light" onclick="resetForm()">Limpiar</button>
       </div>
@@ -979,7 +979,7 @@
 
     function loadDemoData() {
       document.getElementById('nombreRestaurante').value = 'Bar Atlántico';
-      document.getElementById('subtitulo').value = 'Carta ideal demo de bebidas';
+      document.getElementById('subtitulo').value = 'Bar - Restaurant';
       document.getElementById('telefono').value = '+54 223 444 7788';
       document.getElementById('instagram').value = '@baratlantico';
       document.getElementById('direccion').value = 'Güemes 2450, Mar del Plata';
@@ -989,7 +989,7 @@
       document.getElementById('nombreMenu').value = 'Carta de Bebidas';
       document.getElementById('tipoPlantilla').value = 'Bebidas';
       document.getElementById('mostrarPrecios').value = 'SI';
-      document.getElementById('observaciones').value = 'Precios a definir. Carta demo ideal de bebidas sin alcohol y con alcohol.';
+      document.getElementById('observaciones').value = 'Precios a definir. Carta demo ideal con variables de la liga de ejecucion de bebidas sin alcohol y con alcohol.';
 
       const container = document.getElementById('itemsContainer');
       container.innerHTML = '';
